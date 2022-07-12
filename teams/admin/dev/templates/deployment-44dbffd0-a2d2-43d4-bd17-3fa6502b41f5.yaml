@@ -1,0 +1,185 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations: null
+  clusterName: null
+  creationTimestamp: null
+  deletionGracePeriodSeconds: null
+  deletionTimestamp: null
+  finalizers: null
+  generateName: null
+  generation: null
+  labels: null
+  managedFields: null
+  name: e2710d0f-ddad-4af6-82b2-479c800b2fd1
+  namespace: null
+  ownerReferences: null
+  resourceVersion: null
+  selfLink: null
+  uid: null
+spec:
+  minReadySeconds: null
+  paused: null
+  progressDeadlineSeconds: null
+  replicas: 1
+  revisionHistoryLimit: null
+  selector:
+    matchExpressions: null
+    matchLabels:
+      app: SDL-e2710d0f-ddad-4af6-82b2-479c800b2fd1
+  strategy: null
+  template:
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: ''
+      clusterName: null
+      creationTimestamp: null
+      deletionGracePeriodSeconds: null
+      deletionTimestamp: null
+      finalizers: null
+      generateName: null
+      generation: null
+      labels:
+        app: SDL-e2710d0f-ddad-4af6-82b2-479c800b2fd1
+      managedFields: null
+      name: null
+      namespace: null
+      ownerReferences: null
+      resourceVersion: null
+      selfLink: null
+      uid: null
+    spec:
+      activeDeadlineSeconds: null
+      affinity: null
+      automountServiceAccountToken: null
+      containers:
+      - args: []
+        command:
+        - /bin/bash
+        - -ec
+        - while :; do echo '.'; sleep 5 ; done
+        env: []
+        envFrom: null
+        image: 515124186564.dkr.ecr.us-east-2.amazonaws.com/ubuntu-20.04
+        imagePullPolicy: null
+        lifecycle: null
+        livenessProbe:
+          exec:
+            command:
+            - ls
+          failureThreshold: null
+          grpc: null
+          httpGet: null
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          successThreshold: null
+          tcpSocket: null
+          terminationGracePeriodSeconds: null
+          timeoutSeconds: null
+        name: ubuntu-docker-image-storage-ubuntu1
+        ports:
+        - containerPort: 64443
+          hostIp: null
+          hostPort: null
+          name: null
+          protocol: null
+        readinessProbe: null
+        resources:
+          limits:
+            cpu: '1'
+            memory: 512Mi
+          requests: {}
+        securityContext:
+          allowPrivilegeEscalation: null
+          capabilities: null
+          privileged: true
+          procMount: null
+          readOnlyRootFilesystem: null
+          runAsGroup: null
+          runAsNonRoot: null
+          runAsUser: null
+          seLinuxOptions: null
+          seccompProfile: null
+          windowsOptions: null
+        startupProbe: null
+        stdin: null
+        stdinOnce: null
+        terminationMessagePath: null
+        terminationMessagePolicy: null
+        tty: null
+        volumeDevices: null
+        volumeMounts: null
+        workingDir: null
+      dnsConfig: null
+      dnsPolicy: null
+      enableServiceLinks: null
+      ephemeralContainers: null
+      hostAliases: null
+      hostIpc: null
+      hostNetwork: null
+      hostPid: null
+      hostname: null
+      imagePullSecrets: null
+      initContainers:
+      - args: []
+        command:
+        - /bin/bash
+        - -ec
+        - echo '['`date`'][InitContainer] Done!'
+        env: []
+        envFrom: null
+        image: 515124186564.dkr.ecr.us-east-2.amazonaws.com/ubuntu-20.04
+        imagePullPolicy: null
+        lifecycle: null
+        livenessProbe: null
+        name: ubuntu-docker-image-storage-initcontainer1
+        ports: []
+        readinessProbe: null
+        resources:
+          limits:
+            cpu: '1'
+            memory: 512Mi
+          requests: {}
+        securityContext:
+          allowPrivilegeEscalation: null
+          capabilities: null
+          privileged: true
+          procMount: null
+          readOnlyRootFilesystem: null
+          runAsGroup: null
+          runAsNonRoot: null
+          runAsUser: null
+          seLinuxOptions: null
+          seccompProfile: null
+          windowsOptions: null
+        startupProbe: null
+        stdin: null
+        stdinOnce: null
+        terminationMessagePath: null
+        terminationMessagePolicy: null
+        tty: null
+        volumeDevices: null
+        volumeMounts: null
+        workingDir: null
+      nodeName: null
+      nodeSelector: null
+      os: null
+      overhead: null
+      preemptionPolicy: null
+      priority: null
+      priorityClassName: null
+      readinessGates: null
+      restartPolicy: null
+      runtimeClassName: null
+      schedulerName: null
+      securityContext: null
+      serviceAccount: null
+      serviceAccountName: null
+      setHostnameAsFqdn: null
+      shareProcessNamespace: null
+      subdomain: null
+      terminationGracePeriodSeconds: null
+      tolerations: null
+      topologySpreadConstraints: null
+      volumes: []
+status: null
